@@ -1,5 +1,5 @@
 # My neovim config
-![vim-gif](./assets/vim-config.gif)
+![vim-gif](./assets/vim-gif.gif)
 
 I usually use this config for develop with these frameworks:
 
