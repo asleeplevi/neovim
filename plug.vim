@@ -6,6 +6,8 @@ call plug#begin()
   Plug 'nvim-lualine/lualine.nvim' "that cool line below everything
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'getomni/neovim', { 'branch': 'main' }
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

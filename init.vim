@@ -4,7 +4,6 @@
 autocmd!
 " set script encoding
 scriptencoding utf-8
-
 syntax enable
 set autoindent
 set nobackup
@@ -43,6 +42,33 @@ highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
 source ~/.config/nvim/plug.vim
 source ~/.config/nvim/maps.vim
 
-"theme
-colorscheme dracula
 
+
+
+
+
+
+"enable folding
+"set foldmethod=syntax
+"set foldcolumn=1
+"
+
+"automatic line numbers
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END
+
+
+"-- FOLDING --  
+set foldmethod=indent "syntax highlighting items specify folds  
+set foldlevelstart=99 "start file with all folds opened
+let javaScript_fold=1 "activate folding by JS syntax  
+let json_fold=1 "activate folding by JS syntax  
+
+
+"theme
+"colorscheme dracula
+"colorscheme omni
+colorscheme tokyonight

@@ -73,9 +73,17 @@ nmap <C-left> <C-w>>
 nmap <C-up> <C-w>+
 nmap <C-down><down> <C-w>-
 
-"See path
-command Pw !echo %
 
 
 "Search
 nmap <space>/ <cmd>lua require('mappings').curr_buf()<cr>
+nmap <space>v <cmd>lua require('mappings').relative_browser()<cr>
+
+
+nmap <space>n <cmd>set nornu! number!<cr>
+"Save C-S
+inoremap <C-s> <c-o>:w<cr>
+nmap <C-s> <cmd>:w<cr>
+
+nmap <C-w> <cmd>:q<cr>
+
