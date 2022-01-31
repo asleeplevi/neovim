@@ -58,7 +58,7 @@ nmap <C-a> gg<S-v>G
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
 " Move window
-nmap <Space> <C-w>w
+map <Space> <C-w>w
 map s<left> <C-w>h
 map s<up> <C-w>k
 map s<down> <C-w>j
@@ -85,5 +85,5 @@ nmap <space>n <cmd>set nornu! number!<cr>
 inoremap <C-s> <c-o>:w<cr>
 nmap <C-s> <cmd>:w<cr>
 
-nmap <C-w> <cmd>:q<cr>
+nmap <space>w <cmd>:q<cr>
 

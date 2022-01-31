@@ -4,7 +4,7 @@ local action_state = require('telescope.actions.state')
 require'telescope'.setup{
   defaults = {
     prompt_prefix='🔎',
-    file_ignore_patterns={'node_modules/*','.git/*'},
+    file_ignore_patterns={'node_modules/*'},
     mappings = {
       i = {
         ['<C-a>'] = function() print(vim.inspect(action_state.get_selected_entry())) end

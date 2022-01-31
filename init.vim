@@ -1,3 +1,4 @@
+"
 "default settings
 
 " init autocmd
@@ -72,3 +73,4 @@ let json_fold=1 "activate folding by JS syntax
 "colorscheme dracula
 "colorscheme omni
 colorscheme tokyonight
+

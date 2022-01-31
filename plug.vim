@@ -28,4 +28,8 @@ call plug#begin()
 
   Plug 'KarimElghamry/vim-auto-comment'
 
+  "terminal
+  Plug 'Olical/aniseed'
+  Plug 'jlesquembre/nterm.nvim'
+
 call plug#end()
